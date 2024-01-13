@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2family=Caveat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #2D2E39;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header div.options {
+    display: flex;
+    gap: 20px;
+}
+
+header div.options a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    user-select: none;
+}
+
+section article.first div.apresentation {
+    display: flex;
+    padding: 20px;
+}
+
+section article.first div.apresentation div.apresentation-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 50px;
+    width: 80%;
+}
+
+section article.first div.apresentation div.apresentation-text p {
+    color: white;
+}
+
+section article.first div.apresentation div.apresentation-text p#name {
+    background-image: linear-gradient(to right, rebeccapurple, #19C37D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    font-size: 3em;
+    font-family: 'Caveat', cursive;
+}
+
+section article.first div.apresentation div.apresentation-text p#resume {
+    color: #cdd0d4;
+}
+
+section article.first div.apresentation div.apresentation-text p#job {
+    font-weight: 700;
+}
+
+section article.first div.apresentation div.contacts {
+    display: flex;
+    gap: 13px;
+}
+
+section article.first div.apresentation div.contacts a {
+    padding: 12px;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+section article.first div.apresentation div.contacts a#github {
+    background-color: #413a4f;
+}
+
+section article.first div.apresentation div.contacts a#curriculum {
+    background-color: #8a42db;
+}
+
+section article.first div.apresentation div.myself {
+    width: 20%;
+}
+
+section article.first div.apresentation div.myself img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-radius: 50%;
+}
