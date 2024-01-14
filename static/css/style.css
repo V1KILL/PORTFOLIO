@@ -19,84 +19,165 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: #2D2E39;
 }
 
 header div.options {
     display: flex;
-    gap: 20px;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
 }
 
 header div.options a {
     color: white;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     user-select: none;
+    transition: 0.4s;
+    padding: 12px;
+    border-radius: 6px;
 }
 
-section article.first div.apresentation {
-    display: flex;
-    padding: 20px;
+header div.options a:hover {
+    background-color: aliceblue;
+    color: #19C37D;
 }
 
-section article.first div.apresentation div.apresentation-text {
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    padding-left: 50px;
-    width: 80%;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0px;
+    background-color: #2D2E39;
+    padding: 50px 100px;
 }
 
-section article.first div.apresentation div.apresentation-text p {
-    color: white;
-}
-
-section article.first div.apresentation div.apresentation-text p#name {
-    background-image: linear-gradient(to right, rebeccapurple, #19C37D);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    user-select: none;
-    font-size: 3em;
-    font-family: 'Caveat', cursive;
-}
-
-section article.first div.apresentation div.apresentation-text p#resume {
-    color: #cdd0d4;
-}
-
-section article.first div.apresentation div.apresentation-text p#job {
-    font-weight: 700;
-}
-
-section article.first div.apresentation div.contacts {
-    display: flex;
-    gap: 13px;
-}
-
-section article.first div.apresentation div.contacts a {
-    padding: 12px;
-    color: white;
-    border-radius: 4px;
+article a {
+    padding: 14px 80px;
+    background-color: #19C37D;
+    border-radius: 20px;
     text-decoration: none;
+    font-weight: 700;
+    color: white;
+    transition: 0.4s;
 }
 
-section article.first div.apresentation div.contacts a#github {
-    background-color: #413a4f;
+article a:hover {
+    background-color: aliceblue;
+    color: #19C37D;
 }
 
-section article.first div.apresentation div.contacts a#curriculum {
-    background-color: #8a42db;
+article h1 {
+    font-size: 3em;
+    color: white;
 }
 
-section article.first div.apresentation div.myself {
-    width: 20%;
+article h3 {
+    position: relative;
+    font-size: 2.4em;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 40px;
 }
 
-section article.first div.apresentation div.myself img {
+article h3::after {
+    content: '';
+    position: absolute;
+    bottom: -0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; 
+    height: 2px; /* Ajuste a altura da barra */
+    background-color: #8c8c8c;
+}
+
+article div.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    color: white;
+}
+
+article div.contacts div {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5em;
+}
+
+article div.contacts p {
+    transition: 0.4s;
+}
+
+article div.contacts p:hover {
+    color: #19C37D;
+    cursor: pointer;
+}
+
+article div.contacts div i {
+    transition: 0.4s;
+}
+
+article div.contacts div i:hover {
+    color: #19C37D;
+    cursor: pointer;
+}
+
+article.about {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+article.about h1 {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+}
+article.about h1::after {
+    content: '';
+    margin-left: 30px;
+    height: 2px;
+    width: 85%;
+    background-color: #19C37D; 
+}
+
+article.about div {
+    display: flex;
+    justify-content: space-between;
+}
+
+article.about div div.description {
+    display: flex;
+    word-wrap: break-word;
+    text-align: justify;
+    width: 50%;
+}
+
+article.about div div.description p {
+    color:rgb(148, 153, 157);
+}
+
+article.about div div.photo {
+    display: flex;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #19C37D;
+    box-shadow: 0.5px 0.5px 8px rgba(255, 255, 255, 0.500);
+}
+
+article.about div div.photo img {
+    width: 100%;
     object-fit: cover;
     object-position: center;
-    width: 100%;
-    border-radius: 50%;
+    transition: 0.4s;
+}
+
+article.about div div.photo img:hover {
+    transform: scale(1.04);
 }
