@@ -181,3 +181,103 @@ article.about div div.photo img {
 article.about div div.photo img:hover {
     transform: scale(1.04);
 }
+
+article.tecnologies {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+article.tecnologies h1::after,article.tecnologies h1::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    max-width: 40%;
+    width: 100%;
+    height: 2px;
+    background-color: #19C37D;
+} 
+
+article.tecnologies h1::before {
+    left: 0;
+}
+
+article.tecnologies h1::after {
+    right: 0;
+}
+
+article.tecnologies div {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 50px;
+}
+
+article.tecnologies div img{
+    width: 50px;
+}
+ 
+article.tecnologies div i {
+    font-size: 2.7em;
+    color: #60BE86;
+}
+
+article.projects {
+}
+
+article.projects div.projectarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+article.projects div.projectarea div.project {
+    display: flex;
+    align-items: flex-start;
+    width: 450px;
+    flex-direction: column;
+}
+
+article.projects div.projectarea div.project h2 {
+    padding: 20px;
+    color: white;
+}
+
+article.projects div.projectarea div.project p {
+    padding: 20px;
+    color: white;
+    text-align: justify;
+}
+
+article.projects div.projectarea div.projectimage {
+    width: 100%;
+    padding: 20px;
+}
+article.projects div.projectarea div.projectimage img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+article.projects div.projectarea div.project div.projectbuttons{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+article.projects div.projectarea div.project div.languages{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+}
+
+article.projects div.projectarea div.project div.projectbuttons a{
+    display: flex;
+    padding: 8px;
+    border-radius: 0;
+}
