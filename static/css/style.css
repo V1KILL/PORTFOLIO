@@ -29,17 +29,20 @@ div.container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
     background-color: var(--black);
+
 }
 
 header {
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 50px 0px 150px 0px;
-    flex-wrap: wrap;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 150px;
+    
 }
 
 header a {
@@ -114,6 +117,7 @@ article a:hover {
     background-color: var(--black);
     color: white;
     box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.500);
+    animation: flutuar 1.5s infinite;
 }
 
 aboutme {
@@ -158,6 +162,19 @@ aboutme div.blocktext h1 {
     color: white;
     user-select: none;
     font-size: 2em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+aboutme div.blocktext h1::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    text-align: center;
+    width: 50%;
+    border-bottom: 4px solid var(--green);
+    color: white;
 }
 
 aboutme div.blocktext h4 {
@@ -165,17 +182,6 @@ aboutme div.blocktext h4 {
     text-align: justify;
     user-select: none;
     word-wrap: break-word;
-}
-
-aboutme div.blocktext h4::after{
-    content: '';
-    position: absolute;
-    left: 20px;
-    bottom: 0;
-    text-align: center;
-    width: 50%;
-    border-bottom: 5px solid var(--green);
-    color: white;    
 }
 
 tecnologies {
@@ -201,18 +207,122 @@ tecnologies div.tecnologies {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
-    gap: 10px;
+    gap: 12px;
 }
 
 tecnologies div.tecnologies div.tecnology {
     display: flex;
     justify-content: center;
+    transition: 0.4s all ease;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
     width: 100px;
     gap: 10px;
     border: 1px solid var(--grey);
+    transition: 0.3s;
+} 
+
+tecnologies div.tecnologies div.tecnology:hover {
+    box-shadow: 1px 1px 16px rgba(255, 255, 255, 0.500);
+    transform: scale(1.08);
+    animation: flutuar 1.5s infinite;
+}
+
+tecnologies div.tecnologies div#html:hover {
+    background-color: var(--green);
+    color: white;
+}
+
+tecnologies div.tecnologies div#html {
+    color: var(--green);
+}
+
+tecnologies div.tecnologies div#css:hover {
+   background-color: var(--green);
+   color: white;
+}
+
+tecnologies div.tecnologies div#css {
+   color: var(--green);
+}
+
+tecnologies div.tecnologies div#github {
+    transition: 0.4s;
+    color: var(--green);
+}
+
+tecnologies div.tecnologies div#github:hover {
+    background-color: var(--green);
+}
+
+tecnologies div.tecnologies div#github:hover i {
+    color: white;
+}
+
+tecnologies div.tecnologies div#git {
+    color: var(--green);
+    transition: 0.4s;
+}
+
+tecnologies div.tecnologies div#git:hover {
+    background-color: var(--green);
+}
+
+tecnologies div.tecnologies div#git:hover i, tecnologies div.tecnologies div#git:hover p  {
+    color: white;
+}
+
+tecnologies div.tecnologies div#javascript {
+    transition: 0.4s;
+}
+
+tecnologies div.tecnologies div#javascript i {
+    color: var(--green);
+}
+
+tecnologies div.tecnologies div#javascript:hover {
+    background-color: var(--green);
+}
+
+tecnologies div.tecnologies div#javascript:hover i, tecnologies div.tecnologies div#javascript:hover p {
+    color: white;
+}
+
+tecnologies div.tecnologies div#python i {
+    color: var(--green);
+}
+
+tecnologies div.tecnologies div#python:hover {
+    background-color: var(--green);
+}
+
+tecnologies div.tecnologies div#python:hover i, tecnologies div.tecnologies div#python:hover p {
+    color: white;
+}
+
+tecnologies div.tecnologies div#mysql i{
+    transition: 0.4s;
+    color: var(--green);
+}
+tecnologies div.tecnologies div#mysql:hover {
+    background-color: var(--green);
+}
+
+tecnologies div.tecnologies div#mysql:hover i, tecnologies div.tecnologies div#mysql:hover p  {
+    color: white;
+}
+
+tecnologies div.tecnologies div#django {
+    color: var(--green);
+}
+
+tecnologies div.tecnologies div#django:hover {
+    background-color: var(--green);
+}
+
+tecnologies div.tecnologies div#django:hover i, tecnologies div.tecnologies div#django:hover p {
+    color: white;
 }
 
 tecnologies  div.tecnologies div.tecnology img {
@@ -235,8 +345,15 @@ projects {
     flex-direction: column;
 }
 
+projects h1 {
+    color: white;
+    font-size: 2em;
+}
+
 projects div.projectsarea {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -254,6 +371,7 @@ projects div.projectsarea div.project {
 projects div.projectsarea div.project h3 {
     color: var(--grey);
     user-select: none;
+
 }
 
 projects div.projectsarea div.project h4 {
@@ -298,5 +416,85 @@ projects div.projectbuttons a {
 projects div.projectbuttons a:hover {
     background-color: var(--black);
     box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.500);
+    animation: flutuar 1.5s infinite;
 }
 
+contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+contacts div.socialmedias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+contacts div.socialmedias a {
+    color: white;
+    font-size: 1.5em;
+    transition: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+contacts div.socialmedias a:hover {
+    color: var(--green);
+    animation: flutuar 1.5s infinite;
+}
+
+contacts h1 {
+    color: white;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid var(--grey);
+    padding: 10px;
+    color: white;
+}
+
+form button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--green);
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 0.4s;
+}
+
+form button:hover {
+    background-color: var(--black);
+    color: white;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.500);
+    animation: flutuar 1.5s infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
