@@ -16,26 +16,28 @@
             <a href="">About</a>
             <a href="">Projects</a>
             <a href="">Contacts</a>
+            <a onclick="changeLanguage('pt-br')">Português</a>
         </header>
         <section>
             <article>
-                <h1>Hello, I'm Viktor Amaral</h1>
-                <h3>BackEnd - Developer</h3>
-                <a href="">Curriculum</a>
+                <h1 data-translate="hello">Hello, I'm Viktor Amaral</h1>
+                <h3 data-translate="job">BackEnd - Developer</h3>
+                <a data-translate="cv" href="">Curriculum</a>
             </article>
             <aboutme>
                 <div class="blockimage">
                     <img src="../static/img/Ben Tennyson.jpg" alt="">
                 </div>
                 <div class="blocktext">
-                    <h1>About Me</h1>
-                    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quisquam consequuntur rerum vitae, quae sint, dolores facere iure pariatur blanditiis accusantium! Hic quas iure sequi, at quae officiis dolor soluta.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum ullam perferendis voluptatem error quam exercitationem voluptates iusto tenetur aut itaque dolorum obcaecati, sit culpa. Ducimus rem cupiditate repudiandae corrupti.
+                    <h1 data-translate="h1aboutme">About Me</h1>
+                    <h4 data-translate="h4aboutme">BackEnd Programmer with Expertise in <span style="color: #19C37D;">Django</span>, <span style="color: #19C37D;">Python</span>, <span style="color: #19C37D;">JavaScript</span>, <span style="color: #19C37D;">MySQL</span> And Basic Knowledge In <span style="color: #19C37D;">Cloud</span>.
                     </h4>
+
+                    <h4 data-translate="h4aboutme2">Currently, I am dedicated to developing solutions for small businesses and undertaking personal projects to keep me constantly learning</h4>
                 </div>
             </aboutme>
             <tecnologies>
-                <h1>Tech</h1>
+                <h1 data-translate="tech">Tech</h1>
                 <div class="tecnologies">
                     <div id="django" class="tecnology">
                         <i style="font-size: 3.6em;" class="devicon-django-plain"></i>
@@ -84,57 +86,57 @@
                 </div>
             </tecnologies>
             <projects>
-                <h1>Projects</h1>
+                <h1 data-translate="projects" >Projects</h1>
                 <div class="projectsarea">
                     <div class="project">
                         <div class="projectimage">
                             <img src="../static/img/blogmind.png" alt="">
                         </div>
-                        <h1>Project - BlogMind</h1>
-                        <h3>
+                        <h1 data-translate="project1">Project - BlogMind</h1>
+                        <h3 data-translate="h3project1">
                             The BlogMind aims to provide knowledge in various areas, making it accessible to everyone. Additionally, we offer interactive pages for easy comprehension to further enrich your experience!
                         </h3>
 
-                        <h3>
+                        <h3 data-translate="h3project11">
                             We are an open community, welcoming curious minds in the pursuit and sharing of knowledge.😊
                         </h3>
 
-                        <h3>
+                        <h3 data-translate="h3project111">
                             With an interface focused on languages and technologies, we invite you to contribute if you have a unique perspective or experience in both area.
                         </h3>
                         
                         <h4>Django / MySQL / Python / JavaScript</h4>
                         <div class="projectbuttons">
-                            <a href="https://github.com/V1KILL/PROJETO-BLOGMIND">View Code</a>
-                            <a href="https://blogmind.pythonanywhere.com/">View Project</a>
+                            <a data-translate="viewcode" href="https://github.com/V1KILL/PROJETO-BLOGMIND">View Code</a>
+                            <a data-translate="viewproject" href="https://blogmind.pythonanywhere.com/">View Project</a>
                         </div>
                     </div>
                     <div class="project">
                         <div class="projectimage">
                             <img src="../static/img/clearmind.jpg" alt="">
                         </div>
-                        <h1>Project - ClearMind</h1>
-                        <h3>ClearMind, inspired by the widely recognized Notion app, aims to simplify the process of setting short and long-term goals.
+                        <h1 data-translate="project2">Project - ClearMind</h1>
+                        <h3 data-translate="h3project21" >ClearMind, inspired by the widely recognized Notion app, aims to simplify the process of setting short and long-term goals.
                         </h3>
-                        <h3>With an intuitive visual interface, we seek to provide a clear and objective experience to help you achieve your daily goals with ease, and it's Especially reccomended to create a daily routine in your life.</h3>
+                        <h3 data-translate="h3project22" >With an intuitive visual interface, we seek to provide a clear and objective experience to help you achieve your daily goals with ease, and it's Especially reccomended to create a daily routine in your life.</h3>
 
                             <h4>Django / MySQL / Python / JavaScript</h4>
                         <div class="projectbuttons">
-                            <a href="https://github.com/V1KILL/PROJETO-LISTA-DE-TAREFAS">View Code</a>
-                            <a href="https://clearmind.pythonanywhere.com/">View Project</a>
+                            <a data-translate="viewcode" href="https://github.com/V1KILL/PROJETO-LISTA-DE-TAREFAS">View Code</a>
+                            <a data-translate="viewproject" href="https://clearmind.pythonanywhere.com/">View Project</a>
                         </div>
                     </div>
                 </div>
             </projects>
             <contacts>
-                <h1>Contact Me</h1>
+                <h1 data-translate="contact">Contact Me</h1>
                 <form action="https://formsubmit.co/canalv1kill@gmail.com" method="POST">
                     <input type="hidden" name="_next" value="https://http://127.0.0.1:5500/index.html">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     <input type="email" name="email" placeholder="Your E-mail" required>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" data-translate="sendmessage">Send Message</button>
                </form>
                <div class="socialmedias">
                    <a href="https://www.linkedin.com/in/victor-amaral-a251aa261/" class="devicon-linkedin-plain"></a>
