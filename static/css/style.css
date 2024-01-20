@@ -17,6 +17,10 @@
     --font: 'Open Sans', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--black);
 }
@@ -42,11 +46,11 @@ header {
     top: 0;
     z-index: 1;
     margin-bottom: 150px;
-    
 }
 
 header a {
     text-decoration: none;
+    flex-basis: 2px;
     color: white;
     padding: 10px 26px;
     background-color: var(--green);

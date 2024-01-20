@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/c99caadda1.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div class="container">
         <header id="header">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Projects</a>
-            <a href="">Contacts</a>
-            <a onclick="changeLanguage('pt-br')">Português</a>
+            <a data-translate="projects" href="#projects">Projects</a>
+            <img id="language" onclick="changeLanguage()" width="48" height="48" src="https://img.icons8.com/color/48/great-britain-circular.png" alt="great-britain-circular"/>
+            <a data-translate="contacts" href="#contacts">Contacts</a>
         </header>
         <section>
             <article>
@@ -85,7 +84,7 @@
                     </div>
                 </div>
             </tecnologies>
-            <projects>
+            <projects id="projects">
                 <h1 data-translate="projects" >Projects</h1>
                 <div class="projectsarea">
                     <div class="project">
@@ -129,7 +128,7 @@
                 </div>
             </projects>
             <contacts>
-                <h1 data-translate="contact">Contact Me</h1>
+                <h1 data-translate="contacts">Contact Me</h1>
                 <form action="https://formsubmit.co/canalv1kill@gmail.com" method="POST">
                     <input type="hidden" name="_next" value="https://http://127.0.0.1:5500/index.html">
                     <input type="hidden" name="_captcha" value="false">
@@ -138,7 +137,7 @@
                     <input type="email" name="email" placeholder="Your E-mail" required>
                     <button type="submit" data-translate="sendmessage">Send Message</button>
                </form>
-               <div class="socialmedias">
+               <div class="socialmedias" id="contacts">
                    <a href="https://www.linkedin.com/in/victor-amaral-a251aa261/" class="devicon-linkedin-plain"></a>
                    <a href="https://github.com/V1KILL" class="devicon-github-original"></a>
                     <a href="https://www.instagram.com/viktoramaral/" class="fa-brands fa-instagram"></a>
