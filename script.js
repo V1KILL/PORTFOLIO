@@ -1,3 +1,22 @@
+window.sr = ScrollReveal({ distance: '200px', reset: true})
+sr.reveal('tecnologies', {
+    origin: 'left',
+    duration: 1500
+})
+
+sr.reveal('projects', {
+    origin: 'left',
+    duration: 1500
+})
+
+sr.reveal('aboutme', {
+    origin: 'left',
+    duration: 1500
+})
+
+
+
+
 var header = document.getElementById("header");
 
 window.onscroll = function() {
@@ -33,26 +52,30 @@ function changeLanguage() {
               'job': "Desenvolvedor Back-End",
               'h1aboutme': "Sobre Mim",
               'h4aboutme': 'Desenvolvedor Back-End Com Expertise Em Django, Python, JavaScript, MySQL e Conhecimentos Básicos Em Cloud',
-              'h4aboutme2': 'Atualmente, me dedico a desenvolver soluções para pequenos negócios e realizar projetos pessoais para me manter em constante aprendizado',
+              'h4aboutme2': 'Atualmente, Me Dedico A Desenvolver Soluções Para Pequenos Negócios e Realizar Projetos Pessoais Para Me Manter Em Constante Aprendizado',
+
+              
+              'h3project1':'Este Projeto Foi Desenvolvido Para o Compartilhamento do Conteúdo de Diversas Categorias, Específicamente em Tecnologia e Idiomas.',
+              
+              'h3project11':'Contendo Funcionalidades Avançadas e Opções de Personalização Que Geralmente Você Só Encontra Em Blog Famosos!',
+              
+              
+              
+              'h3project21':'Este Projeto Foi Desenvolvido com Objetivo em Permitir Com Que os Usuários Definem Suas Metas de Longo e Curto Prazo.',
+              
+              'h3project22':'Também Possui Uma Interface Fácil De Entender e Personalizar de Acordo Com Seu Interesse Pessoal',
+
+              
   
-              'h3project1': 'O BlogMind tem como objetivo disponibilizar conhecimento em diversas áreas, tornando-o acessível a todos. Além disso, oferecemos páginas interativas de fácil compreensão para enriquecer ainda mais sua experiência!',
-  
-              'h3project11': 'Somos uma comunidade aberta, acolhendo mentes curiosas na busca e compartilhamento de conhecimento.😊',
-  
-              'h3project111': 'Com uma interface focada em linguagens e tecnologias, convidamos você a contribuir caso tenha uma perspectiva ou experiência única em ambas as áreas!',
-  
-              'h3project21': 'ClearMind, inspirado no amplamente reconhecido aplicativo Notion, visa simplificar o processo de definição de metas de curto e longo prazo.',
-  
-              'h3project22': "Com uma interface visual intuitiva, buscamos proporcionar uma experiência clara e objetiva para ajudá-lo a atingir seus objetivos diários com facilidade, sendo especialmente recomendado para criar uma rotina diária em sua vida.",
-  
-              'viewcode': 'Visualizar Código',
+              'viewcode': 'Visualizar Código e Documentação',
               'viewproject': 'Visualizar Projeto',
               'tech': 'Tecnologias',
               'projects': 'Projetos',
               'project1': 'Projeto - BlogMind',
               'project2': 'Projeto - ClearMind',
-              'contacts': 'Contato',
-              'sendmessage': 'Enviar Mensagem',
+              'contacts': 'Mandar Um Email',
+              'contact': 'Contatos',
+              'sendmessage': 'Enviar Email',
   
         },
         'en-us': {
@@ -64,25 +87,27 @@ function changeLanguage() {
             'h4aboutme': 'Back-End Developer with Expertise in Django, Python, JavaScript, MySQL, and Basic Knowledge in Cloud Technologies.',
             'h4aboutme2': 'Currently, I Am Dedicated to Developing Solutions for Small Businesses and Undertaking Personal Projects to Keep Me Constantly Learning',
         
-            'h3project1': "BlogMind Aims to Provide Knowledge in Various Areas, Making It Accessible to Everyone. Additionally, We Offer Interactive Pages for Easy Understanding to Enrich Your Experience Even More!",
-
-            'h3project11': "We Are an Open Community, Welcoming Curious Minds in the Search and Sharing of Knowledge. 😊",
-
-            'h3project111': "With a Focus on Languages and Technologies, We Invite You to Contribute If You Have a Unique Perspective or Experience in Both Areas!",
-
-            'h3project21': "ClearMind, Inspired by the Widely Recognized Notion App, Aims to Simplify the Process of Setting Short and Long-Term Goals.",
-
-            'h3project22': "With an Intuitive Visual Interface, We Seek to Provide a Clear and Objective Experience to Help You Achieve Your Daily Goals with Ease, Especially Recommended for Creating a Daily Routine in Your Life.",
+           
+            'h3project1':'This Project Was Developed to Share Content from Various Categories, Specifically in Technology and Languages.',
+              
+            'h3project11':'Containing Advanced Features and Customization Options That You Usually Only Find on Famous Blogs!',
+            
+            
+            
+            'h3project21':'This Project was developed with the aim of allowing users to define their long and short term goals.',
+            
+            'h3project22': 'It also has an interface that is easy to understand and customize according to your personal interest.',
 
         
-            'viewcode': 'View Code',
+            'viewcode': 'View Code and Documentation',
             'viewproject': 'View Project',
             'tech': 'Technologies',
             'projects': 'Projects',
             'project1': 'Project - BlogMind',
             'project2': 'Project - ClearMind',
-            'contacts': 'Contact',
-            'sendmessage': 'Send Message',
+            'contacts': 'Send an Email',
+            'contact': 'Contacts',
+            'sendmessage': 'Send Email',
             
         },
     };

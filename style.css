@@ -17,7 +17,7 @@
     --font: 'Open Sans', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -38,10 +38,10 @@ div.container {
 }
 
 header {
-    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
     gap: 10px;
     top: 0;
     z-index: 1;
@@ -49,20 +49,19 @@ header {
 }
 
 header a {
-    text-decoration: none;
-    flex-basis: 2px;
-    color: white;
     padding: 10px 26px;
-    background-color: var(--green);
-    border-radius: 8px;
-    font-weight: 700;
-    transition: 0.4s;
     user-select: none;
+    font-weight: 700;
+    color: white;
+    background-color: var(--green);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.4s;
 }
 
 header a:hover {
-    background-color: var(--black);
     color: var(--green);
+    background-color: var(--black);
     box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.500);
     animation: flutuar 1.5s infinite;
 }
@@ -75,24 +74,24 @@ section {
 
 article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 20px;
     background-color: var(--black);
 }
 
 article h1{
+    text-align: center;
     font-size: 2.3em;
     color: white;
     user-select: none;
-    text-align: center;
 }
 
 article h3 {
-    font-size: 1.5em;
-    padding-bottom: 20px;
     position: relative;
+    padding-bottom: 20px;
+    font-size: 1.5em;
     color: var(--grey);
     user-select: none;
 }
@@ -100,37 +99,37 @@ article h3 {
 article h3::after {
     content: '';
     position: absolute;
-    left: 25%;
-    bottom: 0;
     text-align: center;
+    left: 25%;
     width: 50%;
-    border-bottom: 3px solid white;
+    bottom: 0;
     color: white;
+    border-bottom: 3px solid white;
 }
 
 article a {
-    font-weight: 700;
-    text-decoration: none;
     padding: 15px 50px 15px 50px;
     border-radius: 8px;
+    font-weight: 700;
     color: white;
     background-color: var(--green);
-    transition: 0.4s;
     user-select: none;
+    text-decoration: none;
+    transition: 0.4s;
 }
 
 article a:hover {
-    background-color: var(--black);
-    color: var(--green);
     box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.500);
+    color: var(--green);
+    background-color: var(--black);
     animation: flutuar 1.5s infinite;
 }
 
 aboutme {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
     background-color: #212624;
 }
@@ -143,68 +142,211 @@ aboutme div.blockimage img {
     width: 100%;
     object-fit: cover;
     object-position: center; 
-    border-radius: 50%;
     user-select: none;
+    padding: 20px;
+    border: 1px solid var(--grey);
 }
 
 aboutme div.blocktext {
     display: flex;
-    width: 100%;
     flex-direction: column;
     padding: 20px;
     gap: 20px;
+    width: 100%;
 }
 
 aboutme div.blocktext {
     display: flex;
-    width: 100%;
+    flex-direction: column;
     position: relative;
-    flex-direction: column;
     padding: 20px;
     gap: 20px;
+    width: 100%;
 }
 
 aboutme div.blocktext h1 {
-    color: white;
-    user-select: none;
-    font-size: 2em;
+    text-align: center;
     position: relative;
     padding-bottom: 10px;
+    font-size: 2em;
+    color: white;
+    user-select: none;
 }
 
 aboutme div.blocktext h1::after {
     content: '';
     position: absolute;
-    left: 0px;
+    width: 10%;
+    left: 45%;
     bottom: 0;
-    text-align: center;
-    width: 50%;
-    border-bottom: 4px solid var(--green);
     color: white;
+    border-bottom: 4px solid var(--green);
+    transition: width 0.5s ease, left 0.5s ease; 
+}
+
+aboutme div.blocktext h1:hover::after {
+    width: 100%;
+    left: 0%;
+    
 }
 
 aboutme div.blocktext h4 {
-    color: var(--grey);
     text-align: justify;
-    user-select: none;
     word-wrap: break-word;
+    color: var(--grey);
+    user-select: none;
 }
 
-tecnologies {
+projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+projects h1 {
+    position: relative;
+    font-size: 2em;
+    color: white;
+    padding-bottom: 10px;
+}
+
+projects h1#project::after {
+    content: '';
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    bottom: 0px;
+    color: white;
+    border-bottom: 4px solid var(--green);
+    transition: width 0.5s ease, left 0.5s ease; 
+}
+
+projects h1#project:hover::after {
+    width: 100%;
+    left: 0px;
+    
+}
+
+projects div.projectsarea {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+}
+
+projects div.projectsarea div.project {
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    min-height: 500px;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid var(--grey);
+}
+
+projects div.projectsarea div.project h3 {
+    color: var(--grey);
+    user-select: none;
+}
+
+projects div.projectsarea div.project h4 {
+    word-wrap: break-word;
+    text-align: justify;
+    color: white;
+    user-select: none;
+}
+
+projects div.projectimage {
+    width: 100%;
+}
+
+projects div.projectimage img {
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+    width: 100%;
+    transition: 0.4s;
+}
+
+projects div.projectimage img:hover {
+    transform: scale(1.06);
+}
+
+projects div.projectdescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+projects div.projectbuttons {
+    display: flex;
+    gap: 20px;
+}
+
+projects div.projectbuttons a {
+    padding: 8px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--green);
+    border-radius: 6px;
+    user-select: none;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+projects div.projectbuttons a:hover {
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.500);
+    color: var(--green);
+    background-color: var(--black);
+    animation: flutuar 1.5s infinite;
+}
+
+
+tecnologies {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
     background-color: var(--black);
 }
 
 tecnologies h1 {
-    color: white;
     position: relative;
     padding-bottom: 10px;
+    text-align: center;
     font-size: 2em;
+    color: white;
     user-select: none;
+}
+
+tecnologies h1::after {
+    content: '';
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    bottom: 0;
+    color: white;
+    border-bottom: 4px solid var(--green);
+    transition: width 0.5s ease, left 0.5s ease; 
+}
+
+tecnologies h1:hover::after {
+    width: 100%;
+    left: 0%;
 }
 
 tecnologies div.tecnologies {
@@ -219,14 +361,13 @@ tecnologies div.tecnologies {
 tecnologies div.tecnologies div.tecnology {
     display: flex;
     justify-content: center;
-    transition: 0.4s all ease;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    width: 100px;
     gap: 10px;
+    width: 100px;
     border: 1px solid var(--grey);
-    transition: 0.3s;
+    transition: 0.4s all ease;
 } 
 
 tecnologies div.tecnologies div.tecnology:hover {
@@ -236,8 +377,8 @@ tecnologies div.tecnologies div.tecnology:hover {
 }
 
 tecnologies div.tecnologies div#html:hover {
-    background-color: var(--green);
     color: white;
+    background-color: var(--green);
 }
 
 tecnologies div.tecnologies div#html {
@@ -245,8 +386,8 @@ tecnologies div.tecnologies div#html {
 }
 
 tecnologies div.tecnologies div#css:hover {
-   background-color: var(--green);
-   color: white;
+    color: white;
+    background-color: var(--green);
 }
 
 tecnologies div.tecnologies div#css {
@@ -254,8 +395,8 @@ tecnologies div.tecnologies div#css {
 }
 
 tecnologies div.tecnologies div#github {
-    transition: 0.4s;
     color: var(--green);
+    transition: 0.4s;
 }
 
 tecnologies div.tecnologies div#github:hover {
@@ -336,111 +477,16 @@ tecnologies  div.tecnologies div.tecnology img {
 }
 
 tecnologies  div.tecnologies div.tecnology p {
-    color: white;
-    user-select: none;
     font-weight: 600;
-}
-
-projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-    padding: 20px;
-    flex-direction: column;
-}
-
-projects h1 {
     color: white;
-    font-size: 2em;
-}
-
-projects div.projectsarea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-projects div.projectsarea div.project {
-    display: flex;
-    text-align: center;
-    max-width: 500px;
-    min-height: 500px;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    border: 1px solid var(--grey);
-}
-
-projects div.projectsarea div.project h3 {
-    color: var(--grey);
     user-select: none;
-
-}
-
-projects div.projectsarea div.project h4 {
-    color: white;
-    text-align: justify;
-    user-select: none;
-    word-wrap: break-word;
-}
-
-projects div.projectimage {
-    width: 100%;
-}
-
-projects div.projectimage img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    user-select: none;
-    transition: 0.4s;
-}
-
-projects div.projectimage img:hover {
-    transform: scale(1.06);
-}
-
-projects div.projectdescription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-projects div.projectbuttons {
-    display: flex;
-    gap: 20px;
-}
-
-projects div.projectbuttons a {
-    padding: 8px;
-    text-decoration: none;
-    background-color: var(--green);
-    color: white;
-    font-weight: 700;
-    transition: 0.4s;
-    border-radius: 6px;
-    user-select: none;
-}
-
-projects div.projectbuttons a:hover {
-    background-color: var(--black);
-    color: var(--green);
-    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.500);
-    animation: flutuar 1.5s infinite;
 }
 
 contacts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 20px;
     padding: 20px;
 }
@@ -454,11 +500,11 @@ contacts div.socialmedias {
 }
 
 contacts div.socialmedias a {
-    color: white;
-    font-size: 1.5em;
-    transition: 0.4s;
-    text-decoration: none;
     cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
 }
 
 contacts div.socialmedias a:hover {
@@ -467,22 +513,42 @@ contacts div.socialmedias a:hover {
 }
 
 contacts h1 {
+    position: relative;
+    padding-bottom: 10px;
     color: white;
+}
+
+contacts h1::after {
+    content: '';
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    bottom: 0px;
+    color: white;
+    height: 4px;
+    background-color: var(--green);
+    transition: width 0.5s ease, left 0.5s ease; 
+}
+
+contacts h1:hover::after {
+    width: 100%; /* Quando hover, aumenta para 100% da largura */
+    left: 0; /* Alinha com a borda esquerda para se completar para os lados */
 }
 
 form {
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    gap: 20px;
 }
 
 form input, form textarea {
+    padding: 10px;
     border: none;
     outline: none;
-    background-color: transparent;
-    border-bottom: 3px solid var(--grey);
-    padding: 10px;
     color: white;
+    border-bottom: 3px solid var(--grey);
+    background-color: transparent;
     transition: 0.4s all ease;
 }
 
@@ -491,21 +557,21 @@ form input:hover, form textarea:hover {
 }
 
 form button {
+    padding: 8px;
     border: none;
     outline: none;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: var(--green);
     color: white;
     font-weight: 700;
     font-size: 1em;
+    border-radius: 8px;
+    background-color: var(--green);
     transition: 0.4s;
 }
 
 form button:hover {
-    background-color: var(--black);
-    color: var(--green);
     box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.500);
+    color: var(--green);
+    background-color: var(--black);
     animation: flutuar 1.5s infinite;
 }
 

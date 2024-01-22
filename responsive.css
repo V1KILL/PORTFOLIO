@@ -9,8 +9,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 50%;
         max-width: 500px;
-        width: 100%;
     }
 
     aboutme div.blockimage img {
@@ -21,10 +21,8 @@
     }
 
     aboutme div.blocktext {
+        display: flex;
         flex-wrap: wrap;
-        overflow-wrap: break-word;
-        word-break: break-all;
-        word-wrap: break-word;
         justify-content: center;
         align-items: center;
         width: 50%;
@@ -37,15 +35,14 @@
 
     projects div.projectsarea {
         width: 100%;
-        
     }
 
     projects div.projectsarea div.project {
-        max-width: none;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        flex-direction: row;
+        width: 78%;
+        max-width: none;
     }
 
     projects div.projectsarea div.project div.projectimage {
@@ -82,9 +79,6 @@
 
     aboutme div.blocktext {
         flex-wrap: wrap;
-        overflow-wrap: break-word;
-        word-break: break-all;
-        word-wrap: break-word;
         justify-content: center;
         align-items: center;
         width: 50%;
