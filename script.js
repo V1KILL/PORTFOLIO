@@ -1,24 +1,11 @@
-window.sr = ScrollReveal({ distance: '200px', reset: true})
-sr.reveal('tecnologies', {
-    origin: 'left',
-    duration: 1500
-})
+window.sr = ScrollReveal({ distance: '200px', reset: true, origin: 'left',
+duration: 2000})
 
-sr.reveal('projects', {
-    origin: 'left',
-    duration: 1500
-})
-
-sr.reveal('aboutme', {
-    origin: 'left',
-    duration: 1500
-})
-
-
-
+sr.reveal('tecnologies')
+sr.reveal('projects')
+sr.reveal('aboutme')
 
 var header = document.getElementById("header");
-
 window.onscroll = function() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.style.transition = '0.3s padding ease'
@@ -30,8 +17,6 @@ window.onscroll = function() {
   }
 };
 
-
-  
 function changeLanguage() {
     var languageicon = document.getElementById('language');
     var lang = 'empty'
@@ -39,85 +24,68 @@ function changeLanguage() {
         languageicon.src = 'https://img.icons8.com/fluency/48/brazil-circular.png';
         lang = 'pt-br'
     }
-
     else {
         languageicon.src = 'https://img.icons8.com/color/48/great-britain-circular.png';
         lang = 'en-us'
     }
-
     const data = {
         'pt-br': {
               'hello': 'Olá!, Eu Me Chamo Viktor',
               'cv': "Baixar Currículo",
               'job': "Desenvolvedor Back-End",
-              'h1aboutme': "Sobre Mim",
-              'h4aboutme': 'Desenvolvedor Back-End Com Expertise Em Django, Python, JavaScript, MySQL e Conhecimentos Básicos Em Cloud',
-              'h4aboutme2': 'Atualmente, Me Dedico A Desenvolver Soluções Para Pequenos Negócios e Realizar Projetos Pessoais Para Me Manter Em Constante Aprendizado',
+              'aboutmetitle': "Sobre Mim",
+              
+              'aboutmedescription': 'Desenvolvedor Back-End Com Expertise Em Django, Python, JavaScript, MySQL e Conhecimentos Básicos Em Cloud',
 
+              'aboutmedescriptionmiddle': 'Atualmente, Me Dedico A Desenvolver Soluções Para Pequenos Negócios e Realizar Projetos Pessoais Para Me Manter Em Constante Aprendizado',
               
-              'h3project1':'Este Projeto Foi Desenvolvido Para o Compartilhamento do Conteúdo de Diversas Categorias, Específicamente em Tecnologia e Idiomas.',
-              
-              'h3project11':'Contendo Funcionalidades Avançadas e Opções de Personalização Que Geralmente Você Só Encontra Em Blog Famosos!',
-              
+              'aboutmedescriptionend': `Estou Preparado para Aprender e Agregar Valor ao Sucesso dos Próximos Projetos da Equipe ou Empresa.`,
               
               
-              'h3project21':'Este Projeto Foi Desenvolvido com Objetivo em Permitir Com Que os Usuários Definem Suas Metas de Longo e Curto Prazo.',
-              
-              'h3project22':'Também Possui Uma Interface Fácil De Entender e Personalizar de Acordo Com Seu Interesse Pessoal',
-
-              
-  
+              'blogminddescription':'Este Projeto Foi Desenvolvido Para o Compartilhamento do Conteúdo de Diversas Categorias, Específicamente em Tecnologia e Idiomas.',
+              'blogminddescriptionend':'Contendo Funcionalidades Avançadas e Opções de Personalização Que Geralmente Você Só Encontra Em Blog Famosos!',
+              'clearminddescription':'Este Projeto Foi Desenvolvido com Objetivo em Permitir Com Que os Usuários Definem Suas Metas de Longo e Curto Prazo.',
+              'clearminddescriptionend':'Também Possui Uma Interface Fácil De Entender e Personalizar de Acordo Com Seu Interesse Pessoal',
               'viewcode': 'Visualizar Código e Documentação',
               'viewproject': 'Visualizar Projeto',
               'tech': 'Tecnologias',
-              'projects': 'Projetos',
-              'project1': 'Projeto - BlogMind',
-              'project2': 'Projeto - ClearMind',
-              'contacts': 'Mandar Um Email',
+              'projects': 'Meus Projetos',
+              'blogmindtitle': 'Projeto - BlogMind',
+              'clearmindtitle': 'Projeto - ClearMind',
+              'contacts': 'Enviar Um Email',
               'contact': 'Contatos',
               'sendmessage': 'Enviar Email',
-  
         },
         'en-us': {
-            
             'hello': "Hello! I'm Viktor",
             'cv': "Download CV",
             'job': "Back-End Developer",
-            'h1aboutme': "About Me",
-            'h4aboutme': 'Back-End Developer with Expertise in Django, Python, JavaScript, MySQL, and Basic Knowledge in Cloud Technologies.',
-            'h4aboutme2': 'Currently, I Am Dedicated to Developing Solutions for Small Businesses and Undertaking Personal Projects to Keep Me Constantly Learning',
-        
-           
-            'h3project1':'This Project Was Developed to Share Content from Various Categories, Specifically in Technology and Languages.',
-              
-            'h3project11':'Containing Advanced Features and Customization Options That You Usually Only Find on Famous Blogs!',
-            
-            
-            
-            'h3project21':'This Project was developed with the aim of allowing users to define their long and short term goals.',
-            
-            'h3project22': 'It also has an interface that is easy to understand and customize according to your personal interest.',
+            'aboutmetitle': "About Me",    
+            'aboutmedescriptionmiddle': 'Currently, I Am Dedicated to Developing Solutions for Small Businesses and Undertaking Personal Projects to Keep Me Constantly Learning',
+            'aboutmedescription': 'Back-End Developer with Expertise in Django, Python, JavaScript, MySQL, and Basic Knowledge in Cloud Technologies.',
+            'aboutmedescriptionend': `I Am Prepared to Learn and Add Value to The Success of The Team or Company's Next Projects.`,
 
-        
+            'blogminddescription':'This Project Was Developed to Share Content From Various Categories, Specifically in Technology and Languages.',      
+            'clearminddescription':'This Project Was Developed With the Aim of Allowing Users to Define Their Long and Short Term Goals.',  
+            'blogminddescriptionmiddle':'Containing Advanced Features and Customization Options That You Usually Only Find on Famous Blogs!',  
+            'aboutmedescriptionend': `I Am Prepared to Learn and Add Value to The Success of The Team or Company's Next Projects.`,
+            'clearminddescriptionend': 'It Also Has an Interface That is Easy to Understand and Customize According to Your Personal Interest.',
             'viewcode': 'View Code and Documentation',
             'viewproject': 'View Project',
             'tech': 'Technologies',
             'projects': 'Projects',
-            'project1': 'Project - BlogMind',
-            'project2': 'Project - ClearMind',
+            'blogmindtitle': 'Project - BlogMind',
+            'clearmindtitle': 'Project - ClearMind',
             'contacts': 'Send an Email',
             'contact': 'Contacts',
             'sendmessage': 'Send Email',
-            
         },
     };
 
       const elements = document.querySelectorAll('[data-translate]');
-      
       elements.forEach(element => {
             const key = element.getAttribute('data-translate');
-            element.textContent = data[lang][key];
-          
+            element.textContent = data[lang][key];  
       });
   }
   
