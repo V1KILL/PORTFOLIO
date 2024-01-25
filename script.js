@@ -49,7 +49,7 @@ function changeLanguage() {
               'viewcode': 'Visualizar Código e Documentação',
               'viewproject': 'Visualizar Projeto',
               'tech': 'Tecnologias',
-              'projects': 'Meus Projetos',
+              'projects': 'Projetos',
               'blogmindtitle': 'Projeto - BlogMind',
               'clearmindtitle': 'Projeto - ClearMind',
               'contacts': 'Enviar Um Email',

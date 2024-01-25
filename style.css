@@ -48,6 +48,10 @@ header {
     margin-bottom: 150px;
 }
 
+header img {
+    cursor: pointer;
+}
+
 header a {
     padding: 10px 26px;
     user-select: none;
@@ -372,6 +376,15 @@ tecnologies  div.tecnologies div.tecnology p {
     font-weight: 600;
     color: white;
     user-select: none;
+}
+
+tecnologies div.tecnologies div.tecnology i#mysql{
+    color: var(--green);
+    transition: 0.4s;
+}
+
+tecnologies div.tecnologies div.tecnology:hover i#mysql{
+    color: white;
 }
 
 contacts {
