@@ -20,12 +20,12 @@ window.onscroll = function() {
 function changeLanguage() {
     var languageicon = document.getElementById('language');
     var lang = 'empty'
-    if (languageicon.src === 'https://img.icons8.com/color/48/great-britain-circular.png') {
+    if (languageicon.src === 'https://img.icons8.com/color/48/usa-circular.png') {
         languageicon.src = 'https://img.icons8.com/fluency/48/brazil-circular.png';
         lang = 'pt-br'
     }
     else {
-        languageicon.src = 'https://img.icons8.com/color/48/great-britain-circular.png';
+        languageicon.src = 'https://img.icons8.com/color/48/usa-circular.png';
         lang = 'en-us'
     }
     const data = {

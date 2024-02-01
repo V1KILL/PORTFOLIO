@@ -479,7 +479,6 @@ form button:hover {
     background-color: var(--black);
     animation: flutuar 1.5s infinite;
 }
-
 @keyframes flutuar {
     0% {
         transform: translateY(0);
