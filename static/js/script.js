@@ -69,7 +69,7 @@ function changeLanguage() {
 
             'blogminddescription':'This Project Was Developed to Share Content From Various Categories, Specifically in Technology and Languages.',      
             'clearminddescription':'This Project Was Developed With the Aim of Allowing Users to Define Their Long and Short Term Goals.',  
-            'blogminddescriptionmiddle':'Containing Advanced Features and Customization Options That You Usually Only Find on Famous Blogs!',  
+            'blogminddescriptionend':'Containing Advanced Features and Customization Options That You Usually Only Find on Famous Blogs!',  
             'aboutmedescriptionend': `I Am Prepared to Learn and Add Value to The Success of The Team or Company's Next Projects.`,
             'clearminddescriptionend': 'It Also Has an Interface That is Easy to Understand and Customize According to Your Personal Interest.',
             'listmindtitle':'Project - ListMind',
