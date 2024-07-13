@@ -8,12 +8,12 @@
 }
 
 :root {
-    --black: #212624;
+    --black: #121212;
     --blue: #2E303E;
     --grey: #BDBDBD;
     --lightblue: #54678F;
     --lightpurple: #9199BE;
-    --green: #19C37D;
+    --green: #44B78B;
     --font: 'Open Sans', sans-serif;
 }
 
@@ -135,7 +135,7 @@ aboutme {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #212624;
+    background-color: #121212;
 }
 
 aboutme div.blockimage {
