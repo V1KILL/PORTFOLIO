@@ -48,6 +48,12 @@ function changeLanguage() {
               'clearminddescriptionend':'Também Possui Uma Interface Fácil De Entender e Personalizar de Acordo Com Seu Interesse Pessoal',
               'listmindtitle':'Projeto - ListMind',
               'listminddescription':'Este Projeto Foi Desenvolvido para Gerenciar os Serviços de Sua Empresa de Forma Rápida e Prática, Acompanhado de Um Dashboard Contendo Informações Como: Faturamento Mensal, Quantidade de Serviços Registrados, Concluidos e em Garantia.',
+
+
+              'coursefytitle': 'Projeto - Coursefy',
+              'coursefydescription':'Este Projeto Foi Desenvolvido Para Você Criar Seu Próprio Curso Contendo Várias Funcionalidades Como Outras Plataformas de Curso Profissionais',
+              'coursefydescriptionend':'Com Um Belíssimo Design Inspirado Pelo Curso do Abraham Nomeado Como "Editor Zen", Você Terá Uma Experiência Maravilhosa!',
+
               'viewcode': 'Visualizar Código e Documentação',
               'viewproject': 'Visualizar Projeto',
               'tech': 'Tecnologias',
@@ -80,6 +86,12 @@ function changeLanguage() {
             'projects': 'Projects',
             'blogmindtitle': 'Project - BlogMind',
             'clearmindtitle': 'Project - ClearMind',
+
+
+            'coursefytitle':'Project - Coursefy',
+            'coursefydescription':'This Project Was Developed for You Create Your Own Course With Many Functions Like Other Professional Course Platforms.',
+            'coursefydescriptionend':"With a Beautiful Design Inspired by Abraham's Course Named 'Editor Zen', You'll Have a Wonderful Experience!",
+
             'contacts': 'Send an Email',
             'contact': 'Contacts',
             'sendmessage': 'Send Email',
