@@ -105,3 +105,19 @@ function changeLanguage() {
       });
   }
   
+
+
+document.addEventListener('DOMContentLoaded', function () {
+var splides = document.querySelectorAll('.splide');
+splides.forEach(function(splide) {
+    new Splide(splide, {
+        type: 'slide', // ou 'fade' para transição de desvanecimento
+        focus: 'center', 
+        perPage: 1,
+        
+        gap: 20,
+        autoWidth: 1,
+        pagination: false,
+    }).mount();
+});
+});
