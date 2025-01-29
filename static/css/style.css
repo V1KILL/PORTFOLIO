@@ -144,10 +144,11 @@ aboutme {
 
 aboutme div.blockimage {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 aboutme div.blockimage img {
+    border-radius: 8px;
     width: 100%;
     object-fit: cover;
     object-position: center; 
@@ -255,6 +256,7 @@ tecnologies div.tecnologies div.tecnology {
     border: 1px solid var(--grey);
     color: var(--green);
     transition: 0.4s all ease;
+    border-radius: 4px;
 } 
 
 tecnologies div.tecnologies div.tecnology:hover {
@@ -395,12 +397,13 @@ form button:hover {
 .splide__slide {
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
     align-items: start;
     justify-content: start;
     padding: 20px;
     gap: 20px;
     max-width: 300px;
-    border: 1px solid white;
+    border: 2px solid white;
 
     h1 {
         font-size: 18pt;
@@ -419,6 +422,7 @@ form button:hover {
         border: 8px;
         text-decoration: none;
         padding: 10px 20px;
+        border-radius: 4px;
         
     }
     img {
